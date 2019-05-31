@@ -1,10 +1,2 @@
-dsdsdsdsd
-sds
-sd
-d
-d
-dd
-sd
-s
-dsd
-
+echo "hello world"
+mkdir hello{1..4}
