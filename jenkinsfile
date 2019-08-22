@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh "apt-get update -y"
+                sh "mkdir /tmp/pipeline/"
             }
         }
     }
