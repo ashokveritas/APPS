@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+    agent { docker { image 'node:6.3' } }
         stages {
             stage('Build') {
                 steps {
-                    echo 'This is the Build Stage'
+                     sh 'npm --version'
                 }
             }
             stage('Test') {
@@ -16,5 +16,5 @@ pipeline {
                     echo 'This is the Deploy Stage'
                 }
             }
-        }
-    }
+        }   
+    
