@@ -3,7 +3,7 @@ pipeline {
         stages {
             stage('Build') {
                 steps {
-                     echo "$ps -ef"
+                     sh "ps -ef"
                 }
             }
             stage('Test') {
