@@ -1,20 +1,21 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage('Build') { 
+        stage('Build') {
             steps {
             sh 'ps -ef'
             }
         }
-        stage('Test') { 
+        stage('Test') {
             steps {
             sh 'make'
             }
         }
-        stage('Deploy') { 
+        stage('Deploy') {
             steps {
             sh 'ls -ltr'
             }
         }
     }
 }
+
