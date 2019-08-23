@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-            sh 'cd /root/myproject/
+            sh 'cd /root/myproject/'
 	    sh 'make'
             }
         }
