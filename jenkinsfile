@@ -1,6 +1,6 @@
 node{
     stage('SCm Checkout'){
-       git credentialsId: 'git-crdes', url: 'https://github.com/ashokveritas/APPS.git'
+       git credentialsId: 'git-creds', url: 'https://github.com/ashokveritas/APPS.git'
 }
 
 }
