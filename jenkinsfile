@@ -10,14 +10,14 @@ pipeline {
     }
         stage('Testing Stage') {
         steps {
-        withMaven(Maven : 'maven_3.6.1) }
+        withMaven(Maven : 'maven_3.6.1') }
         sh 'mvn test'
         
         }
         
         stage('Deplyment stage') {
         steps {
-        withmaven(Maven : maven_3.6.1') }
+        withmaven(Maven : 'maven_3.6.1') }
         sh 'mvn deploy'
         }
     post {
