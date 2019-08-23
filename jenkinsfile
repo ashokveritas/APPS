@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-            sh 'cd /root/myproject/'
-	    sh 'make'
+            sh '/root/myproject/make'
+	   
             }
         }
         stage('Deploy') {
