@@ -1,21 +1,7 @@
-pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            steps {
-            sh 'ps -ef'
-            }
-        }
-        stage('Test') {
-            steps {
-            sh 'make'
-            }
-        }
-        stage('Deploy') {
-            steps {
-            sh "ls -ltr"
-            }
-        }
-    }
+node{
+    stage('SCm Checkout'){
+       git credentialsId: 'git-crdes', url: 'https://github.com/ashokveritas/APPS.git'
+}
+
 }
 
